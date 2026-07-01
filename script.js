@@ -1,13 +1,17 @@
-console.log("Mapa Conceitual carregado!");
+const botao = document.getElementById("modo");
 
-const cards = document.querySelectorAll(".card");
+botao.onclick = () => {
 
-cards.forEach(card => {
-    card.addEventListener("click", () => {
-        card.style.background = "#dbeafe";
+document.body.classList.toggle("dark");
 
-        setTimeout(() => {
-            card.style.background = "#ffffff";
-        }, 300);
-    });
-});
+if(document.body.classList.contains("dark")){
+
+botao.innerHTML="☀️ Modo Claro";
+
+}else{
+
+botao.innerHTML="🌙 Modo Escuro";
+
+}
+
+};
