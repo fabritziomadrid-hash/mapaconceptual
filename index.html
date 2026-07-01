@@ -1,67 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa Conceitual</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapa Conceitual</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Mapa Conceitual</h1>
-        <p>Organize suas ideias de forma visual.</p>
-    </header>
+<header>
 
-    <main>
+<h1>Mapa Conceitual</h1>
 
-        <section class="conceito-principal">
-            <h2>Conceito Principal</h2>
-            <div class="card">
-                Escreva aqui o conceito principal.
-            </div>
-        </section>
+<button id="modo">
+🌙 Modo Escuro
+</button>
 
-        <section class="mapa">
-            <div class="card">
-                <h3>Tópico 1</h3>
-                <p>Descrição do tópico.</p>
-            </div>
+</header>
 
-            <div class="card">
-                <h3>Tópico 2</h3>
-                <p>Descrição do tópico.</p>
-            </div>
+<div class="mapa">
 
-            <div class="card">
-                <h3>Tópico 3</h3>
-                <p>Descrição do tópico.</p>
-            </div>
-        </section>
+    <div class="quadro centro">
+        <h2>CONCEITO PRINCIPAL</h2>
 
-        <section class="imagens">
-            <h2>Imagens</h2>
+        <div class="imagem">
+            <img src="imagens/principal.png" alt="">
+        </div>
 
-            <div class="imagem-box">
-                <img src="imagens/sua-imagem.jpg" alt="Imagem do mapa conceitual">
-            </div>
+        <p>Escreva aqui.</p>
+    </div>
 
-            <p class="info">
-                Coloque suas imagens na pasta <strong>imagens</strong> e altere o caminho acima.
-            </p>
-        </section>
+    <div class="linha linha1"></div>
+    <div class="linha linha2"></div>
+    <div class="linha linha3"></div>
 
-        <section class="anotacoes">
-            <h2>Anotações</h2>
-            <textarea placeholder="Digite suas observações aqui..."></textarea>
-        </section>
+    <div class="quadro q1">
+        <h3>Tópico 1</h3>
 
-    </main>
+        <div class="imagem">
+            <img src="imagens/img1.png" alt="">
+        </div>
 
-    <footer>
-        <p>© 2026 - Meu Mapa Conceitual</p>
-    </footer>
+        <p>Descrição...</p>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="quadro q2">
+        <h3>Tópico 2</h3>
+
+        <div class="imagem">
+            <img src="imagens/img2.png" alt="">
+        </div>
+
+        <p>Descrição...</p>
+    </div>
+
+    <div class="quadro q3">
+        <h3>Tópico 3</h3>
+
+        <div class="imagem">
+            <img src="imagens/img3.png" alt="">
+        </div>
+
+        <p>Descrição...</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
